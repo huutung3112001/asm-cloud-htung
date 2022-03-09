@@ -28,13 +28,13 @@ $pg = "SELECT * FROM userr WHERE name = '$username' AND password ='$password'";
 
 $result = pg_query($conn, $pg);
 // var_dump($result);
-session_die();
+// session_die();
 $count = pg_num_rows($result);
 
 
 $row = pg_fetch_array($result);// w3
 
-if($count >0){
+if(pg_num_rows($result) >0){
 
     echo "I'm about to learn PHP!";
     $_SESSION['login_user'] = $row['name'];
