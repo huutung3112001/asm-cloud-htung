@@ -178,7 +178,7 @@ margin-top:13px ;
   </head>
   <body>
   <img class='img' src="./img/icon.jpg">
-      <form action="handle_login.php" method ="POST">
+      <form action="handle_login.php" method ="GET">
   <div class="main">
     <p class="sign">Login</p>
     <form class="form1">
