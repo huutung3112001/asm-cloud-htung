@@ -12,11 +12,11 @@ $count = pg_num_rows($result);
 $row = pg_fetch_assoc($result);// w3
 
 if($count == 0){
-    header('location: admin.php');
+    header('location:/admin.php');
     
 }
 else{
     $_SESSION['login_user'] = $row['name'];
-    header('location: main.php');
+    header('location:/main.php');
 }
 ?>
