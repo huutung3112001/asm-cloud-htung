@@ -1,9 +1,9 @@
 <?php
-$servername = "ec2-35-169-188-58.compute-1.amazonaws.com";
-$usernameDB = "nfvnrnqjenqluo";
-$password = "b36955c25c0755800f98cb12a6c948d45793a0879c4d8e9746e60bb508a7bf14";
-$db = "d9me5d5brvng9j";
-$uri = 'postgres://nfvnrnqjenqluo:b36955c25c0755800f98cb12a6c948d45793a0879c4d8e9746e60bb508a7bf14@ec2-35-169-188-58.compute-1.amazonaws.com:5432/d9me5d5brvng9j';
+$servername = "ec2-3-216-221-31.compute-1.amazonaws.com";
+$usernameDB = "anmvhqifhrelof";
+$password = "b1c5b9de4ada863333da4e0df19ad62adb8ece194da1d01fb74075ef19b6da04";
+$db = "dr4viqhane5dt";
+$uri = 'postgres://anmvhqifhrelof:b1c5b9de4ada863333da4e0df19ad62adb8ece194da1d01fb74075ef19b6da04@ec2-3-216-221-31.compute-1.amazonaws.com:5432/dr4viqhane5dt';
 // Create connection
 $conn = pg_connect($uri);
 
