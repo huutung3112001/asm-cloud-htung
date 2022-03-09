@@ -11,8 +11,8 @@ $result = pg_query($conn, $pg);
 //die();
 $count = pg_num_rows($result);
 
-echo('".$count."');
-/* $row = pg_fetch_assoc($result);// w3
+
+$row = pg_fetch_assoc($result);// w3
 
 if($count == 1){
 
@@ -21,5 +21,5 @@ if($count == 1){
 }
 else{
     echo '<script language="javascript">alert("Password or username incorrect !!! try again!!"); window.location="login.php";</script>';
-} */
+}
 ?>
