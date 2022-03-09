@@ -11,7 +11,7 @@ var_dump($result);
 $count = pg_num_rows($result);
 $row = pg_fetch_assoc($result);// w3
 
-if($row == 0){
+if($count == 0){
     echo '<script language="javascript">alert("Password or username incorrect !!! try again!!"); window.location="login.php";</script>';
 
 }
