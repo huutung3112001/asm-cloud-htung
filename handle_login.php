@@ -22,7 +22,7 @@ if($count>0){
 
 
 
-$pg = "SELECT * FROM user WHERE name = '$username' AND password ='$password'";
+$pg = "SELECT * FROM userr WHERE name = '$username' AND password ='$password'";
 
 
 $result = pg_query($conn, $pg);
@@ -33,7 +33,7 @@ $count = pg_num_rows($result);
 
 $row = pg_fetch_array($result);// w3
 
-if($count == 1){
+if($count >0){
 
     $_SESSION['login_user'] = $row['name'];
     header("location: index.php");
