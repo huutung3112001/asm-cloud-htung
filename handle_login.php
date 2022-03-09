@@ -1,12 +1,12 @@
 <?php
 session_start();
-include 'database.php';
+include ('database.php');
 $username = $_POST['username'];
 $password = $_POST['password']; 
 $pg = "SELECT * FROM user where name = '$username' AND password ='$password' ";
 
 $result = pg_query($conn, $pg);
-//var_dump($result);
+var_dump($result);
 //die();
 $count = pg_num_rows($result);
 $row = pg_fetch_assoc($result);// w3
