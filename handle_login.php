@@ -23,7 +23,7 @@ if($count>0){
 
 
 
-$pg = "SELECT * FROM userr WHERE name = '$username' AND password ='$password'";
+$pg = "SELECT * FROM userr WHERE name = '".$username."' AND password ='".$password"'";
 
 
 $result = pg_query($conn, $pg);

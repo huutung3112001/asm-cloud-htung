@@ -1,9 +1,10 @@
 <?php 
-    session_start();
-    // if(!isset($_SESSION['login_user'])){
-    // header('location:login.php');
-    //  }
     include('database.php');
+    session_start();
+    if(!isset($_SESSION['login_user'])){
+    header('location:login.php');
+     }
+    
     $products = [];
     $getCategoriesQuery = "SELECT DISTINCT category FROM product ORDER BY category ASC";
     $categoryResult = pg_query($conn, $getCategoriesQuery);
