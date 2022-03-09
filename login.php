@@ -184,7 +184,7 @@ margin-top:13px ;
     <form class="form1">
       <input class="un " type="text"  placeholder="Username" name="username">
       <input class="pass" type="password"  placeholder="Password" name="password">
-      <button class="submit" name="submit" > Sign in</button>  
+      <button class="submit" name="submit" > Log in</button>  
       <br>  
       <div class="logup">      <a href="logup.php">Create a new account?</a>  
       </div>
