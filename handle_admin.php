@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'database.php';
+include ('database.php');
 $username = $_POST['username'];
 $password = $_POST['password']; 
 $pg = "SELECT * FROM admin where name = '$username' AND password ='$password' ";
