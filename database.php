@@ -13,7 +13,7 @@ $conn_string = "ec2-3-216-221-31.compute-1.amazonaws.com
         . " user=anmvhqifhrelof
 "
         . " password=b1c5b9de4ada863333da4e0df19ad62adb8ece194da1d01fb74075ef19b6da04";
-$db = pg_connect($conn_string);
+$conn = pg_connect($conn_string);
 
 // Check connection
 if (!$conn) {
