@@ -3,7 +3,7 @@ session_start();
 include ('database.php');
 $username = $_POST['username'];
 $password = $_POST['password']; 
-
+/* 
 $sql ="SELECT * FROM user WHERE name ='".$username."' AND password ='".$password."' ";
 $result = pg_query($conn, $sql);
 
@@ -17,12 +17,12 @@ if($count>0){
     header("location: index.php ");
 }else{
     echo '<script language="javascript">alert("Password or username incorrect !!! try again!!"); window.location="login.php";</script>';
-}
+} */
 
 
 
 
-/* $pg = "SELECT * FROM user WHERE name = '$username' AND password ='$password'";
+$pg = "SELECT * FROM user WHERE name = '$username' AND password ='$password'";
 
 
 $result = pg_query($conn, $pg);
@@ -40,6 +40,6 @@ if($count == 1){
 }
 else{
     echo '<script language="javascript">alert("Password or username incorrect !!! try again!!"); window.location="login.php";</script>';
-} */
+}
 
 ?>
