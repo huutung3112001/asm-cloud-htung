@@ -36,6 +36,7 @@ $row = pg_fetch_array($result);// w3
 
 if($count >0){
 
+    echo "I'm about to learn PHP!";
     $_SESSION['login_user'] = $row['name'];
     header("location: index.php");
 }
