@@ -1,8 +1,8 @@
 <?php 
     session_start();
-    if(!isset($_SESSION['login_user'])){
-    header('location:login.php');
-     }
+    // if(!isset($_SESSION['login_user'])){
+    // header('location:login.php');
+    //  }
     include('database.php');
     $products = [];
     $getCategoriesQuery = "SELECT DISTINCT category FROM product ORDER BY category ASC";

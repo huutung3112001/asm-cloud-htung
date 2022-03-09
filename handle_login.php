@@ -3,6 +3,7 @@ session_start();
 include ('database.php');
 $username = $_POST['username'];
 $password = $_POST['password']; 
+
 /* 
 $sql ="SELECT * FROM user WHERE name ='".$username."' AND password ='".$password."' ";
 $result = pg_query($conn, $sql);
