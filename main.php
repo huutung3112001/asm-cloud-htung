@@ -86,7 +86,7 @@
             <tr>
                 <td><?php echo $row['id']?></td>
                 <td><?php echo $row['name']?></td>
-                <td><img src="./img/<?php echo $row['image']?>" alt="img"></td>
+                <td><img src="./img/<?php echo $row['image']?>" alt="img" width="500" height="600"></td>
                 <td><?php echo $row['category']?></td>
                 <td><?php echo $row['price']?></td>
                 <td>
