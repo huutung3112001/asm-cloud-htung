@@ -5,11 +5,12 @@
         $id = $_POST['idProduct'];
         $productName = $_POST['name'];
         $company = $_POST['company'];
+        $amount = $_POST['amount'];
         $image = $_POST['image'];
         $category = $_POST['category'];
         $price = $_POST['price'];
         
-        $pg = "INSERT INTO product (id, company, name, image, category, price) VALUES ( '$id' ,'$company', '$productName', '$image', '$category', '$price')";
+        $pg = "INSERT INTO product (id, company, name, image, category, price, amount) VALUES ( '$id' ,'$company', '$productName', '$image', '$category', '$price', '$amount')";
 
         $result = pg_query($conn, $pg);
 

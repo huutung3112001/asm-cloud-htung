@@ -77,6 +77,7 @@
                                                 <th>Name</th>
                                                 <th>Images</th>
                                                 <th>Category</th>
+                                                <th>Amount</th>
                                                 <th>Price</th>
                                                 <th>More</th>
                                                
@@ -90,6 +91,7 @@
                 <td><?php echo $row['company']?></td>
                 <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
                 <td><?php echo $row['category']?></td>
+                <td><?php echo $row['amount']?></td>
                 <td><?php echo $row['price']?></td>
                 <td>
                   <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>

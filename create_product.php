@@ -36,6 +36,15 @@
                 >
                 
             </div>
+
+            <div class="form-group">
+                    <br>
+                    <label for="exampleInputPassword1">Amount</label>
+                    <input type="text" class="form-control" 
+                    id="exampleInputPassword1" placeholder="Enter amount product"
+                    name="amount"
+                    >
+                </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Company</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" 
