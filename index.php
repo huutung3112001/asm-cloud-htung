@@ -30,7 +30,7 @@
         /* reset css */
         *{
             padding: 0;
-            margin: 0;
+                margin: 0;
             box-sizing: border-box;
         }
         html{
@@ -447,6 +447,7 @@
     <div id="header">
         <ul id="nav">
             <li><a href="#">Home</a></li>
+            <li><a href="#">ATN SHOP</a></li>
             
         </ul>
 <div class="searchandlogout">
