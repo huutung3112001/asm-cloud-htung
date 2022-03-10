@@ -11,11 +11,11 @@
 
 
         if( $password ==  $password1){
-            $sql0 = "SELECT * FROM userr";
+            $sql0 = "SELECT * FROM admin";
             $result0 = pg_query($conn, $sql0);
             $row = pg_fetch_assoc($result0);
             if($row['name'] != $username){
-                $sql = "INSERT INTO userr (name, password) VALUES ( '$username', '$password')" ;
+                $sql = "INSERT INTO admin (name, password) VALUES ( '$username', '$password')" ;
                 $result = pg_query($conn, $sql);
                 echo '<script language="javascript">alert("Successfully"); window.location="login.php";</script>';
             }
