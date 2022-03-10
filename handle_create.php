@@ -20,8 +20,11 @@
         $row = pg_fetch_array($result);
         if(pg_num_rows($result) >0){
 
-            echo "I'm about to learn PHP!";
+            echo "I'm about to learn PHP! </h2>";
            
+        }
+        else {
+            echo "errors </h2>";
         }
         // header('location: main.php');
     }
