@@ -21,7 +21,7 @@
   <body>
     
     <div class="container">
-        <form action="handle_update.php?id=<?php echo $row['id']?>" method="GET">
+        <form action="handle_update.php?id=<?php echo $row['id']?>" method="POST">
             <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" 
