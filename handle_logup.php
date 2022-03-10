@@ -6,16 +6,16 @@
     if(isset($_POST['submit']) ) {
         $username = $_POST['username'];
         $password = $_POST['password']; 
-        $password1 = $_POST['password1']; 
+        // $password1 = $_POST['password1']; ??????????????????????????????
 
 
 
         if( $password ==  $password1){
-            $sql0 = "SELECT * FROM user";
+            $sql0 = "SELECT * FROM userr";
             $result0 = pg_query($conn, $sql0);
             $row = pg_fetch_assoc($result0);
             if($row['name'] != $username){
-                $sql = "INSERT INTO user (name, password) VALUES ( '$username', '$password')" ;
+                $sql = "INSERT INTO userr (name, password) VALUES ( '$username', '$password')" ;
                 $result = pg_query($conn, $sql);
                 echo '<script language="javascript">alert("Successfully"); window.location="login.php";</script>';
             }
