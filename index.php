@@ -547,7 +547,7 @@
     <div id="footer">
         <div class="copy">
             <div class="wrap">
-                <p>All Rights Reserved | Designed by Nguyen Le Nam Giang</a></p>
+                <p>All Rights Reserved | Designed by Nguyen Ngoc Quang Minh</a></p>
             </div>
           </div>
     </div>
