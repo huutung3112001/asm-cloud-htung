@@ -10,11 +10,18 @@
         $pg = "INSERT INTO product (name, image, category, price) VALUES ('$productName', '$image', '$category', '$price')";
 
         $result = pg_query($conn, $pg);
-        if(isset(result)) {
-            echo "okeee";
-        }
-        else { 
-            echo "ngu";
+
+        $result = pg_query($conn, $pg);
+        // var_dump($result);
+        // session_die();
+        $count = pg_num_rows($result);
+
+
+        $row = pg_fetch_array($result);
+        if(pg_num_rows($result) >0){
+
+            echo "I'm about to learn PHP!";
+           
         }
         // header('location: main.php');
     }
