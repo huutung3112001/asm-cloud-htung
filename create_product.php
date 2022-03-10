@@ -44,7 +44,7 @@
             <div class="form-group">
                 <br>
                 <label for="exampleInputPassword1">image</label>
-                <input type="text" class="form-control" 
+                <input type="file" class="form-control" 
                 id="exampleInputPassword1" 
                 name="image"
                 >

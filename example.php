@@ -17,7 +17,7 @@
 <body>
 <?php while($row = pg_fetch_assoc($result)) {?>
            
-           if(  $row['category'] === 'sale' ) {
+           if(  $row['category'] == 'sale' ) {
             <img src="./img/<?php echo $row['image']?>" alt="img">
                 <p>  <?php echo $row['name']?></p>
                   <p><?php echo $row['price']?></p>

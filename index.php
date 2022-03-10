@@ -6,15 +6,15 @@
     echo "check";
      }
     
-    // $products = [];
-    // $getCategoriesQuery = "SELECT DISTINCT category FROM product ORDER BY category ASC";
-    // $categoryResult = pg_query($conn, $getCategoriesQuery);
+    $products = [];
+    $getCategoriesQuery = "SELECT DISTINCT category FROM product ORDER BY category ASC";
+    $categoryResult = pg_query($conn, $getCategoriesQuery);
     
-    // $sql = "SELECT * FROM product";
-    // $result = pg_query($conn, $sql);
-    // while($row = pg_fetch_assoc($result)){
-    //     array_push($products, $row);
-    // };
+    $sql = "SELECT * FROM product";
+    $result = pg_query($conn, $sql);
+    while($row = pg_fetch_assoc($result)){
+        array_push($products, $row);
+    };
 ?>
 <!DOCTYPE html>
 <html lang="en">
