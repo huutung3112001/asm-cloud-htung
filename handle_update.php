@@ -1,7 +1,7 @@
 <?php 
     include('database.php');
+        
 
- 
         $id = $_GET['id'];
         $productName = $_POST['name'];
         $image = $_POST['image'];
