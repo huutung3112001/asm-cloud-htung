@@ -8,8 +8,15 @@
         $price = $_POST['price'];
         
         $pg = "INSERT INTO product (name, image, category, price) VALUES ('$productName', '$image', '$category', '$price')";
+
         $result = pg_query($conn, $pg);
-        header('location: main.php');
+        if(isset(result)) {
+            echo "okeee";
+        }
+        else { 
+            echo "ngu";
+        }
+        // header('location: main.php');
     }
 
 ?>
