@@ -19,7 +19,7 @@
 
 
         $row = pg_fetch_array($result);
-        // echo "ditmemay </h2>"; 
+        // echo "test </h2>"; 
         // if(pg_num_rows($result) == 1)
         // {
 
