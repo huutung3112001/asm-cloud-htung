@@ -14,6 +14,16 @@
   <body>
     
     <div class="container">
+
+        <div class="form-group">
+                <br>
+                <label for="exampleInputPassword1">Id product</label>
+                <input type="text" class="form-control" 
+                id="exampleInputPassword1" placeholder="Enter id"
+                name="idProduct"
+                >
+            </div>
+
         <form action="handle_create.php" method="POST">
             <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
@@ -24,9 +34,17 @@
                 
             </div>
             <div class="form-group">
+                <label for="exampleInputEmail1">Company</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" placeholder="Enter company"
+                    name="company"
+                >
+                
+            </div>
+            <div class="form-group">
                 <br>
                 <label for="exampleInputPassword1">image</label>
-                <input type="file" class="form-control" 
+                <input type="text" class="form-control" 
                 id="exampleInputPassword1" 
                 name="image"
                 >
