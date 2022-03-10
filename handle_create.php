@@ -2,7 +2,7 @@
     include('database.php');
 
     if(isset($_POST['submit']) ) {
-        $id = $_POST['idProduct'];
+       
         $productName = $_POST['name'];
         $company = $_POST['company'];
         $amount = $_POST['amount'];
@@ -10,7 +10,7 @@
         $category = $_POST['category'];
         $price = $_POST['price'];
         
-        $pg = "INSERT INTO product (id, company, name, image, category, price, amount) VALUES ( '$id' ,'$company', '$productName', '$image', '$category', '$price', '$amount')";
+        $pg = "INSERT INTO product (company, name, image, category, price, amount) VALUES ('$company', '$productName', '$image', '$category', '$price', '$amount')";
 
         $result = pg_query($conn, $pg);
 
