@@ -17,7 +17,9 @@
 
 
         $row = pg_fetch_array($result);
-        if(pg_num_rows($result) >0){
+        echo "ditmemay </h2>"; 
+        if(pg_num_rows($result) >0)
+        {
 
             echo "I'm about to learn PHP! </h2>";
            
