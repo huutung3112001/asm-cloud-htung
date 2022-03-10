@@ -7,11 +7,10 @@
         $category = $_POST['category'];
         $price = $_POST['price'];
         
-        $pg = "INSERT INTO product (name, image, category, price) VALUES ('$productName', '$image', '$category', '$price')";
+        $pg = "INSERT INTO product (id, company, name, image, category, price) VALUES (1,'shop1', $productName', '$image', '$category', '$price')";
 
         $result = pg_query($conn, $pg);
 
-        $result = pg_query($conn, $pg);
         // var_dump($result);
         // session_die();
         $count = pg_num_rows($result);
