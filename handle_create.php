@@ -20,7 +20,7 @@
 
         $row = pg_fetch_array($result);
         echo "ditmemay </h2>"; 
-        if(pg_num_rows($result) >0)
+        if(pg_num_rows($result) == 1)
         {
 
             echo "I'm about to learn PHP! </h2>";
