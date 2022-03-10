@@ -14,23 +14,11 @@
 
         $result = pg_query($conn, $pg);
 
-        // var_dump($result);
-        // session_die();
         $count = pg_num_rows($result);
 
 
         $row = pg_fetch_array($result);
-        // echo "test </h2>"; 
-        // if(pg_num_rows($result) == 1)
-        // {
-
-        //     echo "I'm about to learn PHP! </h2>";
-           
-        // }
-        // else {
-        //     echo "errors </h2>";
-        // }
-        header('location: main.php');
+        'location: main.php');
     }
 
 ?>
